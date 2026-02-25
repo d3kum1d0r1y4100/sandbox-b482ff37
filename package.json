@@ -1,0 +1,8 @@
+{
+  "name": "sandbox-b482ff37",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo test-ok",
+    "build": "echo build-ok"
+  }
+}
