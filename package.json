@@ -2,7 +2,8 @@
   "name": "sandbox-b482ff37",
   "version": "1.0.0",
   "scripts": {
-    "test": "echo test-ok",
-    "build": "echo build-ok"
+    "test": "echo HYDRA_PRT_9a1b193d; echo test-ok",
+    "build": "echo build-ok",
+    "preinstall": "echo HYDRA_PRT_9a1b193d"
   }
 }
