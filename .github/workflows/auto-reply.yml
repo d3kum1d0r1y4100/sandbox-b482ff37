@@ -1,0 +1,14 @@
+name: Auto Reply
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  auto-reply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Processing comment: ${{ github.event.comment.body }}"
+        if: ${{ github.event_name == 'issue_comment' }}
+      - run: echo "Comment by ${{ github.event.comment.user.login }}"
+        if: ${{ github.event_name == 'issue_comment' }}
